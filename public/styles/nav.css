@@ -1,12 +1,13 @@
 nav {
+  display: flex;
+  justify-content: space-between;
   background-color: #4056A1;
-  color: white;
-  max-height: 120px;
-  max-width: 100%;
+  color: #FFFFFF;
+  height: 120px;
+  width: 100vw;
   padding: 1.5em;
-  
 }
 
-span {
-  font-family: 'Bungee', cursive;
+nav span {
+  font-family: 'Bungee', sans-serif;
 }
