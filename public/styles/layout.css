@@ -28,11 +28,13 @@ main {
   width: 90%;
   background-color: #f4f1ec;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form {
   width: 96%;
+  padding: 16px, 0;
 }
 
 .form-bottom {
@@ -47,7 +49,47 @@ padding-top: 16px;
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
   background-color: #4056A1;
-  border: transparent;
+  border: none;
   width: 120px;
   height: 1.5em;
+  text-align: center;
+}
+
+.tweet {
+  width: 100%;
+  border: solid #545149;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.user-handle {
+  color: #4057a1bb
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid #545149;
+  padding-top: 16px
+}
+
+.gap-sm {
+  height: 40px;
 }
