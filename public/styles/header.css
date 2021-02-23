@@ -6,6 +6,35 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #4b4b57;
-  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  background-image: url("../images/sky-bg.jpg");
+  background-color: #F3A712;
 }
+
+.avatar-outline {
+  height: 184px;
+  width: 184px;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-mask {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-pic {
+margin: 0 auto;
+margin-left: -15%;
+height: 100%;
+width: auto;
+}
+
+/* Header image credits */
+/* <span>Photo by <a href="https://unsplash.com/@igorson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Igor Son</a> on <a href="https://unsplash.com/s/photos/white-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
+/* <span>Photo by <a href="https://unsplash.com/@paititi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Guillaume Galtier</a> on <a href="https://unsplash.com/collections/1991262/pink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
