@@ -15,7 +15,7 @@ html {
  */
 
 body {
-  color: #545149;
+  color: #353D46;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -34,7 +34,7 @@ main {
 
 .tweet {
   width: 100%;
-  border: solid #545149;
+  border: solid #353D46;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ main {
 }
 
 .user-handle {
-  color: #4057a1bb
+  color: #7FACC7
 }
 
 .post {
@@ -63,7 +63,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: solid #545149;
+  border-top: solid #7FACC7;
   padding-top: 16px
 }
 
