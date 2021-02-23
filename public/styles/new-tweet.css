@@ -41,7 +41,8 @@ button {
   color: #353D46;
   background-color: #F3A712;
   border: none;
-  padding: 6px 16px
+  padding: 6px 16px;
+  border-radius: 5px;
 }
 
 button:hover {
