@@ -32,33 +32,6 @@ main {
   align-items: center;
 }
 
-.form {
-  width: 96%;
-  padding: 16px, 0;
-}
-
-.form-bottom {
-display: flex;
-justify-content: space-between;
-font-family: 'Bungee', sans-serif;
-border-top: solid #545149;
-padding-top: 16px;
-}
-
-.button {
-  font-family: 'Bungee', sans-serif;
-  color: #FFFFFF;
-  background-color: #4056A1;
-  border: none;
-  width: 120px;
-  height: 1.5em;
-  text-align: center;
-}
-
-.button:hover {
-  background-color: #2c3b6e;
-}
-
 .tweet {
   width: 100%;
   border: solid #545149;
