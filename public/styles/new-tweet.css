@@ -2,10 +2,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 32px 0;
 }
 
 form {
-  padding: 16px, 0;
+  padding: 16px 0;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +17,8 @@ textarea::placeholder {
 }
 
 label {
-  font-weight: 700
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 textarea {
@@ -25,7 +27,7 @@ textarea {
   min-height: 25%;
   background-color: transparent;
   border: none;
-  margin-top: 24px;
+  margin: 16px 0;
 }
 
 .tweet-meta {

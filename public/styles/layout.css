@@ -32,10 +32,6 @@ main {
   align-items: center;
 }
 
-.gap-sm {
-  height: 40px;
-}
-
 /* 
  * Tweet Post stuff
  */
@@ -43,6 +39,7 @@ main {
 .container-tweets {
   width: 100%;
   display: flex;
+  margin: 32px 0;
 }
 
 article.tweet {
@@ -53,6 +50,7 @@ article.tweet {
   padding: 16px;
   opacity: 0.8;
   transition: all 0.2s ease-out;
+  margin: 32px 0;
 }
 
 article.tweet header {
@@ -66,6 +64,7 @@ article.tweet header {
   font-size: 24px;
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 .user-meta {
