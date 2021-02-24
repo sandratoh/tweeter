@@ -36,7 +36,7 @@ main {
  * Tweet Post stuff
  */
 
-.container-tweets {
+#tweets-container {
   width: 100%;
   display: flex;
   margin: 32px 0;
