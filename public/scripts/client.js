@@ -18,9 +18,6 @@ $(document).ready(() => {
     "created_at": 1461116232227
   };
   
-  
-  
-  
   const timeInterval = postTime => {
     
     const currentTime = Date.now();
@@ -38,11 +35,11 @@ $(document).ready(() => {
       num /= 30;
       unit = 'month';
 
-    } else if (numOfDays >= 7 && numOfDays < 1) {
+    } else if (numOfDays >= 7) {
       num /= 7;
       unit = 'week';
 
-    } else if (numOfDays === 0) {
+    } else if (Math.floor(numOfDays) === 0) {
       return 'Today';
     }
 
@@ -78,27 +75,14 @@ $(document).ready(() => {
     </article>`
   );
 
-  // const footer = $('<footer>')
-
-  // $tweet.append(footer);
-
-  // const name = $('<p>').text(tweetData.user.name);
-  // const avatar = $('<img>').attr('src', tweetData.user.avatars);
-  // const post = $('<article>').text('Hello world');
-  // post.addClass('tweet');
-  // const $tweet = post.append(name);
-  
   // const renderTweets = tweets => {
   
   // };
   
   // const createTweetElement = tweet => {
-  //   let $tweet = 
-  //   // ...
   //   return $tweet;
   // };
   
-  // createTweetElement();
   
   // renderTweets(data);
   
