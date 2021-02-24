@@ -92,5 +92,17 @@ $(document).ready(() => {
   };
   
   renderTweets(tweetData);
+  
+  $('form').on('submit', event => {
+    event.preventDefault();
 
+    $.ajax({
+      url: '/tweets/',
+      method: 'POST',
+      data: $('form').serialize()
+    })
+      .then(res => console.log('It works!'))
+      .catch(err => console.log(err));
+  });
+  
 });
