@@ -6,6 +6,8 @@ nav {
   height: 120px;
   width: 100vw;
   padding: 1.5em;
+  position: fixed;
+  top: 0;
 }
 
 nav span {
