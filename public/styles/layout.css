@@ -49,8 +49,10 @@ article.tweet {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: solid #353D46;
+  border: solid #353D4680;
   padding: 16px;
+  opacity: 0.8;
+  transition: all 0.2s ease-out;
 }
 
 article.tweet header {
@@ -76,8 +78,10 @@ article.tweet header {
 }
 
 .tweeter-handle {
-  color: #d4d4d4;
+  opacity: 0;
+  color: #353D46;
   font-weight: 400;
+  transition: all 0.2s ease-out;
 }
 
 article.tweet footer {
@@ -85,10 +89,26 @@ article.tweet footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-top: solid #7FACC7;
+  border-top: solid #353D4680;
   font-size: 18px;
+  transition: all 0.2s ease-out;
 }
 
 .icons {
   word-spacing: 8px;
+}
+
+article.tweet:hover {
+  box-shadow: 8px 8px #EE586280;
+  transform: translateY(8px);
+  border: solid #EE5862;
+  opacity: 1;
+}
+
+article.tweet:hover .tweeter-handle {
+  opacity: 0.8
+}
+
+article.tweet:hover footer {
+  border-top: solid #EE5862
 }
