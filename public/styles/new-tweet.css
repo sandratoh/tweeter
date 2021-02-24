@@ -6,7 +6,7 @@
 }
 
 form {
-  padding: 16px 0;
+  margin: 16px 0;
   display: flex;
   flex-direction: column;
 }
@@ -22,9 +22,8 @@ label {
 }
 
 textarea {
-  min-width: 100%;
-  max-width:100%;
-  min-height: 25%;
+  resize:none;
+  flex: 1 0 auto;
   background-color: transparent;
   border: none;
   margin: 16px 0;
