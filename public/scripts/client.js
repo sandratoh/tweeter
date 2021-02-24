@@ -1,31 +1,40 @@
 /*
  * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
 $(document).ready(() => {
-  // Test / driver code (temporary). Eventually will get this from the server.
-  const tweetData = {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+
+  const tweetData = [
+    {
+      "user": {
+        "name": "Newton",
+        "avatars": "https://i.imgur.com/73hZDYK.png",
+        "handle": "@SirIsaac"
+      },
+      "content": {
+        "text": "If I have seen further it is by standing on the shoulders of giants"
+      },
+      "created_at": 1614025805444
     },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  };
+    {
+      "user": {
+        "name": "Descartes",
+        "avatars": "https://i.imgur.com/nlhLi3I.png",
+        "handle": "@rd"
+      },
+      "content": {
+        "text": "Je pense , donc je suis"
+      },
+      "created_at": 1614111969553
+    }
+  ];
   
   const timeInterval = postTime => {
-    
     const currentTime = Date.now();
     const numOfDays = (currentTime - postTime) / (1000 * 3600 * 24);
     
     let num = numOfDays;
     let unit = 'day';
-    let result = '';
     
     if (numOfDays >= 365) {
       num /= 365;
@@ -49,46 +58,39 @@ $(document).ready(() => {
       unit += 's';
     }
     
-    result = `${roundedNum} ${unit} ago`;
-
-    return result;
+    return `${roundedNum} ${unit} ago`;
   };
 
-  const $tweet = $(
-    `<article class="tweet">
-      <header>
-        <img src=${tweetData.user.avatars}>
-        <div class="user-meta">
-          <p>${tweetData.user.name}</p>
-          <p class="tweeter-handle">${tweetData.user.handle}</p>
-        </div>
-      </header>
-      <p>${tweetData.content.text}</p>
-      <footer>
-        <p>${timeInterval(tweetData.created_at)}</p>
-        <div class="icons">
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="far fa-heart"></i>
-        </div>
-      </footer>
-    </article>`
-  );
+  const renderTweets = tweets => {
+    for (let tweet of tweets) {
+      $('#tweets-container').append(createTweetElement(tweet));
+    }
+  };
+  
+  const createTweetElement = tweet => {
+    let $tweet = $(
+      `<article class="tweet">
+        <header>
+          <img src=${tweet.user.avatars}>
+          <div class="user-meta">
+            <p>${tweet.user.name}</p>
+            <p class="tweeter-handle">${tweet.user.handle}</p>
+          </div>
+        </header>
+        <p>${tweet.content.text}</p>
+        <footer>
+          <p>${timeInterval(tweet.created_at)}</p>
+          <div class="icons">
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="far fa-heart"></i>
+          </div>
+        </footer>
+      </article>`
+    );
+    return $tweet;
+  };
+  
+  renderTweets(tweetData);
 
-  // const renderTweets = tweets => {
-  
-  // };
-  
-  // const createTweetElement = tweet => {
-  //   return $tweet;
-  // };
-  
-  
-  // renderTweets(data);
-  
-  // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks like
-  $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-  
 });
-
