@@ -4,11 +4,13 @@
 $(document).ready(() => {
   
   const timeInterval = postTime => {
+    // Note: Server has a post time delay of 308760 ms
+    const serverTimeDiff = 308760;
     const currentTime = Date.now();
     const msPerMin = 1000 * 60;
     const msPerHour = msPerMin * 60;
     const msPerDay = msPerHour * 24;
-    const msTimeDiff = currentTime - postTime;
+    const msTimeDiff = currentTime - postTime - serverTimeDiff;
 
     let num = msTimeDiff;
     let unit;
@@ -120,6 +122,7 @@ $(document).ready(() => {
         $('textarea').removeClass('invalid-input');
         $('.form-msg').removeClass('error-msg');
         $('.form-msg').text('ฅ^•ﻌ•^ฅ');
+        console.log('Current Time is ', Date.now());
         return;
       })
       .catch(err => console.log(err));
