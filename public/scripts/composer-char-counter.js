@@ -1,3 +1,6 @@
+/* global $ */
+/* global document */
+
 $(document).ready(() => {
 
   $('#tweet-text').on('input', function(event) {

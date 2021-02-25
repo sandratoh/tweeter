@@ -1,3 +1,6 @@
+/* global $ */
+/* global document */
+
 $(document).ready(() => {
 
   $('textarea').on('input', function(event) {

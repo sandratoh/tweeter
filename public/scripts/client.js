@@ -1,6 +1,5 @@
-/*
- * Client-side JS logic goes here
- */
+/* global $ */
+/* global document */
 
 $(document).ready(() => {
   
