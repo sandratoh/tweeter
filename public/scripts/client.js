@@ -36,6 +36,7 @@ $(document).ready(() => {
   };
 
   const renderTweets = tweets => {
+    $('#tweets-container').empty();
     for (let tweet of tweets) {
       $('#tweets-container').append(createTweetElement(tweet));
     }
@@ -72,7 +73,7 @@ $(document).ready(() => {
       url: '/tweets/',
       data: $('form').serialize()
     })
-      .then(res => console.log('It works!'))
+      .then(res => loadTweets())
       .catch(err => console.log(err));
   });
   
