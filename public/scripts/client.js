@@ -70,7 +70,7 @@ $(document).ready(() => {
 
     $.post({
       url: '/tweets/',
-      data: $('form').serialize(),
+      data: $('form').serialize()
     })
       .then(res => console.log('It works!'))
       .catch(err => console.log(err));

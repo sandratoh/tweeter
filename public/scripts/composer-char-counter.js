@@ -3,7 +3,7 @@
 
 $(document).ready(() => {
 
-  $('#tweet-text').on('input', function(event) {
+  $('#tweet-text').on('input', function() {
     const tweetLength = $('#tweet-text').val().length;
     const counter = $(this).closest('form').find('.counter');
     const maxChar = 140;
