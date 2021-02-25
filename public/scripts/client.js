@@ -3,31 +3,6 @@
  */
 
 $(document).ready(() => {
-
-  const tweetData = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png",
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1614025805444
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd"
-      },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1614111969553
-    }
-  ];
   
   const timeInterval = postTime => {
     const currentTime = Date.now();
@@ -91,8 +66,6 @@ $(document).ready(() => {
     return $tweet;
   };
   
-  renderTweets(tweetData);
-  
   $('form').on('submit', event => {
     event.preventDefault();
 
@@ -105,4 +78,16 @@ $(document).ready(() => {
       .catch(err => console.log(err));
   });
   
+  const loadTweets = () => {
+
+    $.ajax({
+      url: '/tweets/',
+      method: 'GET',
+      dataType: 'json'
+    })
+      .then(res => renderTweets(res))
+      .catch(err => console.log(err));
+  };
+
+  loadTweets();
 });
