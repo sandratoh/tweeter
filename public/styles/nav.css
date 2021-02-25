@@ -13,4 +13,23 @@ nav {
 
 nav span {
   font-family: 'Bungee', sans-serif;
+  font-size: 36px;
+  align-items: center;
+}
+
+.nav-cta {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  margin-top: 4px
+}
+
+.nav-icon:hover {
+  color:#F3A712;
+  transform: translateY(8px);
+  transition: all 0.2s ease-out;
 }

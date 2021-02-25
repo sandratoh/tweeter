@@ -99,6 +99,11 @@ article.tweet footer {
   word-spacing: 8px;
 }
 
+.tweet-icon:hover{
+  color:#F3A712;
+  transition: all 0.2s ease-out;
+}
+
 article.tweet:hover {
   box-shadow: 8px 8px #EE586280;
   transform: translateY(8px);

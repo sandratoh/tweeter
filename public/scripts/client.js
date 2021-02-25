@@ -62,9 +62,9 @@ $(document).ready(() => {
       `<footer>
         <p>${timeInterval(tweet.created_at)}</p>
         <div class="icons">
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="far fa-heart"></i>
+          <i class="tweet-icon fas fa-flag"></i>
+          <i class="tweet-icon fas fa-retweet"></i>
+          <i class="tweet-icon far fa-heart"></i>
         </div>
       </footer>`
     );
