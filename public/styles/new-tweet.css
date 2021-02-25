@@ -11,11 +11,6 @@ form {
   flex-direction: column;
 }
 
-textarea::placeholder {
-  font-style: italic;
-  color: rgb(175, 175, 175)
-}
-
 label {
   font-weight: 700;
   margin-bottom: 8px;
@@ -27,6 +22,15 @@ textarea {
   background-color: transparent;
   border: none;
   margin: 16px 0;
+}
+
+textarea:focus { 
+  outline: none;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  color: rgb(175, 175, 175)
 }
 
 .tweet-meta {
@@ -49,6 +53,10 @@ button {
 button:hover {
   color: #FFFFFF;
   background-color: #EE5862;
+}
+
+button:focus {
+  outline: none;
 }
 
 .counter {
