@@ -52,6 +52,7 @@ article.tweet {
   opacity: 0.8;
   transition: all 0.2s ease-out;
   margin: 32px 0;
+  word-wrap: break-word;
 }
 
 article.tweet header {
