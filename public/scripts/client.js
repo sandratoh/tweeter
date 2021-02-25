@@ -84,9 +84,11 @@ $(document).ready(() => {
     const input = $('textarea').val();
 
     if (!input) {
-      alert('No input');
+      $('textarea').addClass('invalid-input');
+      $('.error-msg').text('Empty input');
     } else if (input.length > 140) {
-      alert('Too many char');
+      $('textarea').addClass('invalid-input');
+      $('.error-msg').text('Too many char');
     }
 
     $.post({
