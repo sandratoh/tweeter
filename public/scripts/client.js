@@ -120,7 +120,6 @@ $(document).ready(() => {
         $('textarea').removeClass('invalid-input');
         $('.form-msg').removeClass('error-msg');
         $('.form-msg').text('ฅ^•ﻌ•^ฅ');
-        console.log('Current Time is ', Date.now());
         return;
       })
       .catch(err => console.log(err));
