@@ -83,12 +83,9 @@ $(document).ready(() => {
 
     const input = $('textarea').val();
 
-    if (!input) {
+    if (!input || input.length > 140) {
       $('textarea').addClass('invalid-input');
-      $('.error-msg').text('Empty input');
-    } else if (input.length > 140) {
-      $('textarea').addClass('invalid-input');
-      $('.error-msg').text('Too many char');
+      return !input ? $('.error-msg').text('Empty input') : $('.error-msg').text('Too many char');
     }
 
     $.post({
@@ -98,6 +95,8 @@ $(document).ready(() => {
       .then(res => {
         loadTweets();
         $('form').trigger('reset');
+        $('textarea').removeClass('invalid-input');
+        $('.error-msg').text('');
         return;
       })
       .catch(err => console.log(err));
