@@ -37,7 +37,10 @@ $(document).ready(() => {
 
   const renderTweets = tweets => {
     $('#tweets-container').empty();
-    for (let tweet of tweets) {
+
+    let sortedTweets = tweets.sort((a, b) => b.created_at - a.created_at);
+    
+    for (let tweet of sortedTweets) {
       $('#tweets-container').append(createTweetElement(tweet));
     }
   };
@@ -70,7 +73,7 @@ $(document).ready(() => {
     event.preventDefault();
 
     const input = $('textarea').val();
-    
+
     if (!input) {
       alert('No input');
     } else if (input.length > 140) {
