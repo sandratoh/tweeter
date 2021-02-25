@@ -70,10 +70,12 @@ $(document).ready(() => {
     );
 
     let $tweet = $('<article>');
-    $tweet.addClass('tweet');
-    $tweet.append(header);
-    $tweet.append(safeChar);
-    $tweet.append(footer);
+
+    $tweet
+      .addClass('tweet')
+      .append(header)
+      .append(safeChar)
+      .append(footer);
     
     return $tweet;
   };
@@ -85,7 +87,8 @@ $(document).ready(() => {
 
     if (!input || input.length > 140) {
       $('textarea').addClass('invalid-input');
-      return !input ? $('.error-msg').text('Empty input') : $('.error-msg').text('Too many char');
+      $('.form-msg').addClass('error-msg');
+      return !input ? $('.form-msg').text('Tweet, tweet, something is empty!') : $('.form-msg').text('Tweet. Characters. Overload!');
     }
 
     $.post({
@@ -96,7 +99,8 @@ $(document).ready(() => {
         loadTweets();
         $('form').trigger('reset');
         $('textarea').removeClass('invalid-input');
-        $('.error-msg').text('');
+        $('.form-msg').removeClass('error-msg');
+        $('.form-msg').text('ฅ^•ﻌ•^ฅ');
         return;
       })
       .catch(err => console.log(err));

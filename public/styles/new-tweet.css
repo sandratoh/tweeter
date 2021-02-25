@@ -21,11 +21,23 @@ textarea {
   flex: 1 0 auto;
   background-color: transparent;
   border: none;
-  margin: 16px 0;
+  margin: 8px 0 4px;
+  padding: 8px 0;
+}
+
+.invalid-input {
+  resize:none;
+  flex: 1 0 auto;
+  background-color: #EE586225;
+  outline: 2px solid #EE5862;
+  border: none;
+  margin: 8px 0 4px;
+  padding: 8px 0;
 }
 
 textarea:focus { 
   outline: none;
+  background-color: transparent;
 }
 
 textarea::placeholder {
@@ -48,15 +60,12 @@ button {
   border: none;
   padding: 6px 16px;
   border-radius: 5px;
+  outline:none;
 }
 
 button:hover {
   color: #FFFFFF;
   background-color: #EE5862;
-}
-
-button:focus {
-  outline: none;
 }
 
 .counter {
@@ -69,4 +78,17 @@ button:focus {
 
 .char-warning {
   color: #F3A712;
+}
+
+.form-msg {
+  font-style: italic;
+  font-size: smaller;
+  color: transparent;
+  margin: 0 0 4px;
+  opacity: 0;
+}
+
+.error-msg {
+  color: #EE5862;
+  opacity: 1;
 }
