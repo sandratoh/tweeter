@@ -68,20 +68,17 @@ $(document).ready(() => {
   $('form').on('submit', event => {
     event.preventDefault();
 
-    $.ajax({
+    $.post({
       url: '/tweets/',
-      method: 'POST',
-      data: $('form').serialize()
+      data: $('form').serialize(),
     })
       .then(res => console.log('It works!'))
       .catch(err => console.log(err));
   });
   
   const loadTweets = () => {
-
-    $.ajax({
+    $.get({
       url: '/tweets/',
-      method: 'GET',
       dataType: 'json'
     })
       .then(res => renderTweets(res))
