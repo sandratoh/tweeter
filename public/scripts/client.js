@@ -46,26 +46,35 @@ $(document).ready(() => {
   };
   
   const createTweetElement = tweet => {
-    let $tweet = $(
-      `<article class="tweet">
-        <header>
-          <img src=${tweet.user.avatars}>
-          <div class="user-meta">
-            <p>${tweet.user.name}</p>
-            <p class="tweeter-handle">${tweet.user.handle}</p>
-          </div>
-        </header>
-        <p>${tweet.content.text}</p>
-        <footer>
-          <p>${timeInterval(tweet.created_at)}</p>
-          <div class="icons">
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="far fa-heart"></i>
-          </div>
-        </footer>
-      </article>`
+    let header = $(
+      `<header>
+        <img src=${tweet.user.avatars}>
+        <div class="user-meta">
+          <p>${tweet.user.name}</p>
+          <p class="tweeter-handle">${tweet.user.handle}</p>
+        </div>
+      </header>`
     );
+    
+    let safeChar = $('<p>').text(tweet.content.text);
+    
+    let footer = $(
+      `<footer>
+        <p>${timeInterval(tweet.created_at)}</p>
+        <div class="icons">
+          <i class="fas fa-flag"></i>
+          <i class="fas fa-retweet"></i>
+          <i class="far fa-heart"></i>
+        </div>
+      </footer>`
+    );
+
+    let $tweet = $('<article>');
+    $tweet.addClass('tweet');
+    $tweet.append(header);
+    $tweet.append(safeChar);
+    $tweet.append(footer);
+    
     return $tweet;
   };
   
