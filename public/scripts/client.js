@@ -69,6 +69,14 @@ $(document).ready(() => {
   $('form').on('submit', event => {
     event.preventDefault();
 
+    const input = $('textarea').val();
+    
+    if (!input) {
+      alert('No input');
+    } else if (input.length > 140) {
+      alert('Too many char');
+    }
+
     $.post({
       url: '/tweets/',
       data: $('form').serialize()
