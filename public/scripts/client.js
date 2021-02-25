@@ -5,27 +5,46 @@ $(document).ready(() => {
   
   const timeInterval = postTime => {
     const currentTime = Date.now();
-    const numOfDays = (currentTime - postTime) / (1000 * 3600 * 24);
-    
-    let num = numOfDays;
-    let unit = 'day';
-    
-    if (numOfDays >= 365) {
-      num /= 365;
-      unit = 'year';
+    const msPerMin = 1000 * 60;
+    const msPerHour = msPerMin * 60;
+    const msPerDay = msPerHour * 24;
+    const msTimeDiff = currentTime - postTime;
 
-    } else if (numOfDays >= 30) {
-      num /= 30;
-      unit = 'month';
+    let num = msTimeDiff;
+    let unit;
 
-    } else if (numOfDays >= 7) {
-      num /= 7;
-      unit = 'week';
+    if (msTimeDiff < msPerMin) {
+      num /= 1000;
+      unit = 'second';
+      
+    } else if (msTimeDiff < msPerHour) {
+      num /= msPerMin;
+      unit = 'minute';
 
-    } else if (Math.floor(numOfDays) === 0) {
-      return 'Today';
+    } else if (msTimeDiff < msPerDay) {
+      num /= msPerHour;
+      unit = 'hour';
+
+    } else {
+      const numOfDays = (msTimeDiff) / (msPerDay);
+      
+      num = numOfDays;
+      unit = 'day';
+      
+      if (numOfDays >= 365) {
+        num /= 365;
+        unit = 'year';
+  
+      } else if (numOfDays >= 30) {
+        num /= 30;
+        unit = 'month';
+  
+      } else if (numOfDays >= 7) {
+        num /= 7;
+        unit = 'week';
+      }
+      
     }
-
     let roundedNum = Math.floor(num);
     
     if (roundedNum > 1) {
