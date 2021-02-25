@@ -4,16 +4,14 @@
 $(document).ready(() => {
   
   const timeInterval = postTime => {
-    // Note: Server has a post time delay of 308760 ms
-    const serverTimeDiff = 308760;
     const currentTime = Date.now();
     const msPerMin = 1000 * 60;
     const msPerHour = msPerMin * 60;
     const msPerDay = msPerHour * 24;
-    const msTimeDiff = currentTime - postTime - serverTimeDiff;
+    const msTimeDiff = currentTime - postTime;
 
     let num = msTimeDiff;
-    let unit;
+    let unit = '';
 
     if (msTimeDiff < msPerMin) {
       num /= 1000;
