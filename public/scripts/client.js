@@ -93,7 +93,11 @@ $(document).ready(() => {
       url: '/tweets/',
       data: $('form').serialize()
     })
-      .then(res => loadTweets())
+      .then(res => {
+        loadTweets();
+        $('form').trigger('reset');
+        return;
+      })
       .catch(err => console.log(err));
   });
   
