@@ -25,16 +25,6 @@ textarea {
   padding: 8px 0;
 }
 
-.invalid-input {
-  resize:none;
-  flex: 1 0 auto;
-  background-color: #EE586225;
-  outline: 2px solid #EE5862;
-  border: none;
-  margin: 8px 0 4px;
-  padding: 8px 0;
-}
-
 textarea:focus { 
   outline: none;
   background-color: transparent;
@@ -43,6 +33,16 @@ textarea:focus {
 textarea::placeholder {
   font-style: italic;
   color: rgb(175, 175, 175)
+}
+
+.invalid-input {
+  resize:none;
+  flex: 1 0 auto;
+  background-color: #EE586225;
+  outline: 2px solid #E02020;
+  border: none;
+  margin: 8px 0 4px;
+  padding: 8px 0;
 }
 
 .tweet-meta {
@@ -90,7 +90,7 @@ button:hover {
 }
 
 .error-msg {
-  color: #EE5862;
+  color: #E02020;
   opacity: 1;
 }
 
@@ -109,14 +109,14 @@ button:hover {
     font-size: 24px;
   }
 
-  textarea::placeholder {
-    color: #FFFFFF
-  }
-
   .invalid-input {
     background-color: #EE586280;
   }
 
+  textarea::placeholder {
+    color: #FFFFFF
+  }
+  
   textarea, textarea:focus {
     background-color: #FFFFFF75;
     box-shadow: -8px 8px 24px rgba(0, 0, 0, 0.15);
@@ -125,6 +125,7 @@ button:hover {
 
   .form-msg {
     font-weight: 600;
+    color:#E02020
   }
 
   .tweet-meta {
