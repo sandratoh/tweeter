@@ -99,6 +99,10 @@ $(document).ready(() => {
     return $tweet;
   };
   
+  $('textarea').on("keydown", () => {
+    $('textarea').removeClass('invalid-input');
+  });
+
   $('form').on('submit', event => {
     event.preventDefault();
 
@@ -117,9 +121,10 @@ $(document).ready(() => {
       .then(res => {
         loadTweets();
         $('form').trigger('reset');
-        $('textarea').removeClass('invalid-input');
+        $('.counter').val('140').removeClass(['char-warning', 'char-invalid']);
         $('.form-msg').removeClass('error-msg');
         $('.form-msg').text('ฅ^•ﻌ•^ฅ');
+        $('textarea').height('54');
         return;
       })
       .catch(err => console.log(err));
