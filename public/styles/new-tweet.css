@@ -125,4 +125,8 @@ button:hover {
   .form-msg {
     font-weight: 600;
   }
+
+  .tweet-meta {
+    border-top: solid #FFFFFF;
+  }
 } 
