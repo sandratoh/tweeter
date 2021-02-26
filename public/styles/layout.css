@@ -114,9 +114,12 @@ article.tweet footer {
   word-spacing: 8px;
 }
 
+.tweet-icon {
+  transition: all 0.2s ease-out;
+}
+
 .tweet-icon:hover{
   color:#EE5862;
-  transition: all 0.2s ease-out;
 }
 
 article.tweet:hover {
