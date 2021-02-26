@@ -44,16 +44,27 @@ width: auto;
   .user-panel {
     display: flex;
     flex-direction: column;
-    width: 50%
+    width: 50%;
+    height: vh;
   }
   
   
   header {
-    /* width: 1%; */
-    /* border: solid blue; */
     margin-top: 0px;
-    /* height: 0; */
-    /* justify-content: flex-start; */
+    height: 320px;
+    justify-content: space-evenly;
+  }
+
+  .avatar-outline {
+    /* display: flex; */
+  }
+
+  br {
+    display: none;
+  }
+
+  .user-panel h2 {
+    margin: 0;
   }
 }
 

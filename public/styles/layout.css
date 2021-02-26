@@ -139,14 +139,13 @@ article.tweet:hover footer {
     flex-direction: row;
     align-items: flex-start;
     margin-top: 120px;
-    /* justify-content: space-around; */
   }
 
   .user-panel {
     /* position: fixed; */
-    border: solid purple;
+    /* border: solid purple; */
     width: 40%;
-    height: vh
+    /* height: vh */
     /* align-items: flex-start; */
     /* height: auto; */
 
