@@ -49,17 +49,12 @@ width: auto;
     background-image: url("../images/sky-bg.jpg");
   }
   
-  
   header {
     margin-top: 0px;
     height: 320px;
     justify-content: space-evenly;
     background-image: none;
     background-color: transparent;
-  }
-
-  .avatar-outline {
-    /* display: flex; */
   }
 
   br {
