@@ -11,10 +11,17 @@ nav {
   z-index: 9999
 }
 
+nav.mobile-nav {
+  display: none;
+}
+
 nav span {
   font-family: 'Bungee', sans-serif;
   font-size: 36px;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav-cta {
@@ -32,4 +39,20 @@ nav span {
   color:#F3A712;
   transform: translateY(8px);
   transition: all 0.2s ease-out;
+}
+
+@media only screen and (max-width: 624px) {
+  nav.desktop-nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-icon {
+    font-size: 2rem;
+  }
 }
