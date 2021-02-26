@@ -100,28 +100,12 @@ button:hover {
  @media only screen and (min-width: 1024px) {
   .new-tweet {
     padding: 0 2rem;
-    /* border:solid blue; */
     width: 100%;
     margin: 1rem 0
   }
 
-  .new-tweet h2 {
-    font-size: 30px;
-  }
-
-  /* .new-tweet label {
-    font-size: 24px
-  } */
-
-  form {
-    /* border: solid pink; */
-    margin-bottom: 1rem;
-  }
-
-  textarea {
-    margin: 4px 0 2px;
-    padding: 2px 0;
-    height: 2.2rem;
+  .new-tweet label {
+    font-size: 26px;
   }
 
   textarea::placeholder {
@@ -129,7 +113,6 @@ button:hover {
   }
 
   .invalid-input {
-    margin: 4px 0 2px;
-    padding: 2px 0;
+    background-color: #EE586280;
   }
 } 
