@@ -46,6 +46,7 @@ width: auto;
     flex-direction: column;
     width: 50%;
     height: vh;
+    background-image: url("../images/sky-bg.jpg");
   }
   
   
@@ -53,6 +54,8 @@ width: auto;
     margin-top: 0px;
     height: 320px;
     justify-content: space-evenly;
+    background-image: none;
+    background-color: transparent;
   }
 
   .avatar-outline {
