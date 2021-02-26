@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -34,21 +35,20 @@
         <i class="fas fa-angle-double-down nav-icon"></i>
       </div>
     </nav>
-
-    <header>
-        <span class="avatar-outline">
-          <div class="image-mask">
-            <img src="/images/profile-plant.jpg" alt="avatar" class="profile-pic"> 
-          </div>
-        </span>
-        <br>
-        <div>
-            <h2>Sandra To</h2>
-        </div>
-    </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <header class="user-profile">
+          <span class="avatar-outline">
+            <div class="image-mask">
+              <img src="/images/profile-plant.jpg" alt="avatar" class="profile-pic"> 
+            </div>
+          </span>
+          <br>
+          <div>
+              <h2>Sandra To</h2>
+          </div>
+      </header>
+    
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
@@ -61,6 +61,7 @@
           </div>
         </form>
       </section>
+
       <div id="tweets-container">
         <article class="tweet">
           <header>

@@ -36,6 +36,24 @@ height: 100%;
 width: auto;
 }
 
+/* 
+ * Responsive Web Layout
+ */
+/* 
+ @media only screen and (min-width: 1024px) {
+  /* .user-panel {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+  } */
+  
+  
+  header .user-profile {
+    /* width: 1%; */
+    border: solid purple;
+  }
+} */
+
 /* Header image credits */
 /* <span>Photo by <a href="https://unsplash.com/@igorson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Igor Son</a> on <a href="https://unsplash.com/s/photos/white-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
 /* <span>Photo by <a href="https://unsplash.com/@paititi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Guillaume Galtier</a> on <a href="https://unsplash.com/collections/1991262/pink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
