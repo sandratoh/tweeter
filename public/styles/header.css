@@ -20,6 +20,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .image-mask {
@@ -37,7 +38,7 @@ width: auto;
 }
 
 /* 
- * Responsive Web Layout
+ * Desktop Layout
  */
 
  @media only screen and (min-width: 1024px) {
@@ -51,7 +52,7 @@ width: auto;
   
   header {
     margin-top: 0px;
-    height: 320px;
+    height: 298px;
     justify-content: space-evenly;
     background-image: none;
     background-color: transparent;

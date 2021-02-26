@@ -94,7 +94,7 @@ button:hover {
 }
 
 /* 
- * Responsive Web Layout
+ * Desktop Layout
  */
 
  @media only screen and (min-width: 1024px) {
@@ -114,5 +114,15 @@ button:hover {
 
   .invalid-input {
     background-color: #EE586280;
+  }
+
+  textarea, textarea:focus {
+    background-color: #FFFFFF75;
+    box-shadow: -8px 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+  }
+
+  .form-msg {
+    font-weight: 600;
   }
 } 

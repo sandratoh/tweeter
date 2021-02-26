@@ -128,7 +128,7 @@ article.tweet:hover footer {
 }
 
 /* 
- * Responsive Web Layout
+ * Desktop Layout
  */
 
 @media only screen and (min-width: 1024px) {
@@ -152,6 +152,7 @@ article.tweet:hover footer {
     padding-top: 120px;
     justify-content: center;
     overflow-y: scroll;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.15);
   }
 
   #tweets-container {
