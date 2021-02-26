@@ -115,14 +115,14 @@ article.tweet footer {
 }
 
 .tweet-icon:hover{
-  color:#F3A712;
+  color:#EE5862;
   transition: all 0.2s ease-out;
 }
 
 article.tweet:hover {
-  box-shadow: 8px 8px #EE586280;
+  box-shadow: 8px 8px #F3A71280;
   transform: translateY(8px);
-  border: solid #EE5862;
+  border: solid #F3A712;
   opacity: 1;
 }
 
@@ -131,7 +131,7 @@ article.tweet:hover .tweeter-handle {
 }
 
 article.tweet:hover footer {
-  border-top: solid #EE5862
+  border-top: solid #7FACC7;
 }
 
 /* 
