@@ -39,20 +39,20 @@ width: auto;
 /* 
  * Responsive Web Layout
  */
-/* 
+
  @media only screen and (min-width: 1024px) {
-  /* .user-panel {
+  .user-panel {
     display: flex;
     flex-direction: column;
     width: 50%
-  } */
+  }
   
   
   header .user-profile {
     /* width: 1%; */
     border: solid purple;
   }
-} */
+}
 
 /* Header image credits */
 /* <span>Photo by <a href="https://unsplash.com/@igorson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Igor Son</a> on <a href="https://unsplash.com/s/photos/white-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */

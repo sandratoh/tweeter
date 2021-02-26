@@ -32,6 +32,13 @@ main {
   align-items: center;
 }
 
+.user-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
 /* 
  * Tweet Post stuff
  */
@@ -122,7 +129,7 @@ article.tweet:hover footer {
 /* 
  * Responsive Web Layout
  */
-/* 
+
 @media only screen and (min-width: 1024px) {
   body {
     flex-direction: row;
@@ -132,9 +139,14 @@ article.tweet:hover footer {
     flex-direction: row;
   }
 
+  user-panel {
+    
+
+  }
+
   #tweets-container {
     /* margin-left: 2.5rem; */
     /* width: 50% */
   }
 
-} */
+}

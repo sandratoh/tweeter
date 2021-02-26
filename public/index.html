@@ -37,30 +37,32 @@
     </nav>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <header class="user-profile">
-          <span class="avatar-outline">
-            <div class="image-mask">
-              <img src="/images/profile-plant.jpg" alt="avatar" class="profile-pic"> 
+      <div class="user-panel">
+        <header class="user-profile">
+            <span class="avatar-outline">
+              <div class="image-mask">
+                <img src="/images/profile-plant.jpg" alt="avatar" class="profile-pic"> 
+              </div>
+            </span>
+            <br>
+            <div>
+                <h2>Sandra To</h2>
             </div>
-          </span>
-          <br>
-          <div>
-              <h2>Sandra To</h2>
-          </div>
-      </header>
-    
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder="Today is a very nice day!"></textarea>
-          <p class="form-msg">Hello There Stranger \|O-O|/ </p>
-          <div class="tweet-meta">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+        </header>
+      
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form method="POST" action="/tweets/">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text" placeholder="Today is a very nice day!"></textarea>
+            <p class="form-msg">Hello There Stranger \|O-O|/ </p>
+            <div class="tweet-meta">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+      </div>
 
       <div id="tweets-container">
         <article class="tweet">
