@@ -3,17 +3,7 @@
 /* global timeInterval */
 
 $(document).ready(() => {
-
-  const renderTweets = tweets => {
-    $('#tweets-container').empty();
-
-    let sortedTweets = tweets.sort((a, b) => b.created_at - a.created_at);
-    
-    for (let tweet of sortedTweets) {
-      $('#tweets-container').append(createTweetElement(tweet));
-    }
-  };
-  
+  /* Create tweet html syntax*/
   const createTweetElement = tweet => {
     let header = $(
       `<header>
@@ -24,9 +14,7 @@ $(document).ready(() => {
         </div>
       </header>`
     );
-    
     let safeChar = $('<p>').text(tweet.content.text);
-    
     let footer = $(
       `<footer>
         <p>${timeInterval(tweet.created_at)}</p>
@@ -37,7 +25,6 @@ $(document).ready(() => {
         </div>
       </footer>`
     );
-
     let $tweet = $('<article>');
 
     $tweet
@@ -49,10 +36,30 @@ $(document).ready(() => {
     return $tweet;
   };
   
-  $('textarea').on("keydown", () => {
-    $('textarea').removeClass('invalid-input');
-  });
+  /* Add tweet to correct section in descending order */
+  const renderTweets = tweets => {
+    $('#tweets-container').empty();
 
+    let sortedTweets = tweets.sort((a, b) => b.created_at - a.created_at);
+    
+    for (let tweet of sortedTweets) {
+      $('#tweets-container').append(createTweetElement(tweet));
+    }
+  };
+
+  /* Load tweet from json database */
+  const loadTweets = () => {
+    $.get({
+      url: '/tweets/',
+      dataType: 'json'
+    })
+      .then(res => renderTweets(res))
+      .catch(err => console.log(err));
+  };
+
+  loadTweets();
+
+  /* Client-side form validation behaviour */
   $('form').on('submit', event => {
     event.preventDefault();
 
@@ -79,15 +86,9 @@ $(document).ready(() => {
       })
       .catch(err => console.log(err));
   });
-  
-  const loadTweets = () => {
-    $.get({
-      url: '/tweets/',
-      dataType: 'json'
-    })
-      .then(res => renderTweets(res))
-      .catch(err => console.log(err));
-  };
 
-  loadTweets();
+  $('textarea').on("keydown", () => {
+    $('textarea').removeClass('invalid-input');
+  });
+
 });
