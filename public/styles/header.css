@@ -9,6 +9,7 @@ header {
   background-image: url("../images/sky-bg.jpg");
   background-color: #F3A712;
   margin-top: 120px;
+  box-shadow: 8px 8px 24px 8px rgba(0, 0, 0, 0.12);
 }
 
 .avatar-outline {
@@ -56,6 +57,7 @@ width: auto;
     justify-content: space-evenly;
     background-image: none;
     background-color: transparent;
+    box-shadow: none;
   }
 
   br {

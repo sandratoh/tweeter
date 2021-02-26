@@ -8,7 +8,8 @@ nav {
   padding: 1.5em;
   position: fixed;
   top: 0;
-  z-index: 9999
+  z-index: 9999;
+  box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.08);
 }
 
 nav.mobile-nav {
