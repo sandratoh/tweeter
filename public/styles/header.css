@@ -6,7 +6,7 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url("../images/sky-bg.jpg");
+  background-image: url("../images/dark-blue-bg.jpg");
   background-color: #F3A712;
   margin-top: 120px;
   box-shadow: 8px 8px 24px 8px rgba(0, 0, 0, 0.12);
@@ -33,9 +33,8 @@ header {
 
 .profile-pic {
 margin: 0 auto;
-margin-left: -15%;
-height: 100%;
-width: auto;
+height: auto;
+width: 160px;
 }
 
 /* 
@@ -48,7 +47,7 @@ width: auto;
     flex-direction: column;
     width: 50%;
     height: vh;
-    background-image: url("../images/sky-bg.jpg");
+    background-image: url("../images/dark-blue-bg.jpg");
   }
   
   header {
@@ -68,10 +67,6 @@ width: auto;
     margin: 0;
   }
 }
-
-/* Header image credits */
-/* <span>Photo by <a href="https://unsplash.com/@igorson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Igor Son</a> on <a href="https://unsplash.com/s/photos/white-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
-/* <span>Photo by <a href="https://unsplash.com/@paititi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Guillaume Galtier</a> on <a href="https://unsplash.com/collections/1991262/pink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
 
 /* Avatar credits */
 /* <a href='https://www.freepik.com/vectors/people'>People vector created by freepik - www.freepik.com</a> */
