@@ -105,14 +105,27 @@ button:hover {
     margin: 1rem 0
   }
 
-  textarea {
-    /* border: solid green; */
-    /* padding: 0 */
+  .new-tweet h2 {
+    font-size: 30px;
+  }
+
+  .new-tweet label {
+    font-size: 22px
   }
 
   form {
     /* border: solid pink; */
-    margin: 0.8rem 0;;
+    margin: 0.8rem 0;
   }
 
+  textarea {
+    margin: 4px 0 2px;
+    padding: 2px 0;
+    height: 2.2rem;
+  }
+
+  .invalid-input {
+    margin: 4px 0 2px;
+    padding: 2px 0;
+  }
 } 
