@@ -16,7 +16,6 @@ html {
 
 body {
   color: #353D46;
-  background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
@@ -56,6 +55,8 @@ article.tweet {
   display: flex;
   flex-direction: column;
   border: solid #353D4680;
+  background-color: #f4f1ec;
+  border-radius: 12px;
   padding: 16px;
   opacity: 0.8;
   transition: all 0.2s ease-out;
@@ -76,6 +77,11 @@ article.tweet header {
   width: 100%;
   margin: 0;
   box-shadow: none;
+}
+
+article.tweet img {
+  height: auto;
+  width: 64px;
 }
 
 .user-meta {
