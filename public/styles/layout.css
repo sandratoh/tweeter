@@ -137,16 +137,24 @@ article.tweet:hover footer {
   
   main {
     flex-direction: row;
+    align-items: flex-start;
+    margin-top: 120px;
+    /* justify-content: space-around; */
   }
 
-  user-panel {
-    
+  .user-panel {
+    /* position: fixed; */
+    border: solid purple;
+    width: 40%;
+    height: vh
+    /* align-items: flex-start; */
+    /* height: auto; */
 
   }
 
   #tweets-container {
-    /* margin-left: 2.5rem; */
-    /* width: 50% */
+    width: 60%;
+    margin: 0 2.5rem;
   }
 
 }

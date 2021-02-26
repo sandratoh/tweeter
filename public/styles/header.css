@@ -48,9 +48,12 @@ width: auto;
   }
   
   
-  header .user-profile {
+  header {
     /* width: 1%; */
-    border: solid purple;
+    /* border: solid blue; */
+    margin-top: 0px;
+    /* height: 0; */
+    /* justify-content: flex-start; */
   }
 }
 
