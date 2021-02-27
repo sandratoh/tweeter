@@ -27,3 +27,8 @@ Built upon a starter repo from Lighthouse Labs, this project serves as practice 
 - body-parser
 - chance
 - md5
+
+## Image Attributions
+- Autumn Studio [@autumnstudio](https://unsplash.com/@autumnstudio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+- Charles Deluvio [@charlesdeluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+- Freepik [@freepik](https://www.freepik.com/vectors/people)
