@@ -12,10 +12,6 @@ nav {
   box-shadow: 8px 8px 24px 10px rgba(0, 0, 0, 0.08);
 }
 
-nav.mobile-nav {
-  display: none;
-}
-
 nav span {
   font-family: 'Bungee', sans-serif;
   font-size: 36px;
@@ -50,19 +46,17 @@ nav span:hover {
 /* 
  * Mobile Layout
  */
-
-@media only screen and (max-width: 624px) {
-  nav.desktop-nav {
-    display: none;
+ 
+ @media only screen and (max-width: 624px) {
+    nav div.nav-cta div {
+      display:none;
+    }
+    
+    nav {
+      min-width: 320px;
+    }
+    
+    .nav-icon {
+      font-size: 2rem;
+    }
   }
-
-  nav.mobile-nav {
-    min-width: 320px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .nav-icon {
-    font-size: 2rem;
-  }
-}
