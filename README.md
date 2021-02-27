@@ -7,19 +7,19 @@ Built upon a starter repo from Lighthouse Labs, this project serves as practice 
 ## Mock-Up
 
 #### Responsive Web Design
-![Mockup of desktop and tablet tweeter](https://github.com/sandratoh/tweeter/blob/master/docs/mockups/tweeter-mockup-1.png)
+![Mockup of desktop and tablet tweeter](https://github.com/sandratoh/tweeter/blob/master/docs/mockup/tweeter-mockup-1.png)
 
 #### Mobile-First Design
-![Mockup of mobile tweeter](https://github.com/sandratoh/tweeter/blob/master/docs/mockups/tweeter-mockup-2.png)
+![Mockup of mobile tweeter](https://github.com/sandratoh/tweeter/blob/master/docs/mockup/tweeter-mockup-2.png)
 
 #### Navigation Menu Access
-![Navigation bar feature gif](https://github.com/sandratoh/tweeter/blob/master/docs/gifs/tweet-nav.gif)
+![Navigation bar feature gif](https://github.com/sandratoh/tweeter/blob/master/docs/gif/tweet-nav.gif)
 
 #### Warning and Invalid Counter States
-![Tweet counter warning and error gif](https://github.com/sandratoh/tweeter/blob/master/docs/gifs/tweet-count.gif)
+![Tweet counter warning and error gif](https://github.com/sandratoh/tweeter/blob/master/docs/gif/tweet-count.gif)
 
 #### Tweet, tweet, tweet away!
-![New tweet post gif](https://github.com/sandratoh/tweeter/blob/master/docs/gifs/tweet-post.gif)
+![New tweet post gif](https://github.com/sandratoh/tweeter/blob/master/docs/gif/tweet-post.gif)
 
 ## Getting Started
 
